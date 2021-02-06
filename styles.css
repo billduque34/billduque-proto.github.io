@@ -11,7 +11,7 @@ body {
 
 /* header part */
 main, header {
-    background-color: rgba(255, 235, 204, 0.3);
+    background-color: rgba(224, 193, 145, 0.432);
 }
 
 header {
@@ -59,10 +59,10 @@ header {
     box-sizing: content-box;
     border-radius: 12px;
     height: 30px;
-    background-color: rgba(37, 136, 33, 0.699);
+    background-color: rgba(30, 128, 27, 0.884);
     color: white;
     font-weight: bold;
-    font-family: Calibri;
+    font-family: 'Calibri';
     font-size: 15px;
     border: none;
     padding: 5px 10px;
@@ -82,7 +82,7 @@ header {
 .navigation {
     position: sticky;
     top: 0;
-    background-color: rgb(25, 158, 25);
+    background-color: rgb(24, 117, 24);
     padding: 1px;
     z-index: 1000;
 }
@@ -136,8 +136,24 @@ main h1 {
 
 /* Carousel part*/
 #carousel {
+    position: relative;
     overflow: hidden;
 }
+
+main {
+    position: relative;
+}
+
+main::before {
+    content: '';
+    background-image: url('images/mehndi-style.jpg');
+    position: absolute;
+    opacity: 0.025;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
 
 #carousel figure {
     position: relative;
@@ -148,10 +164,11 @@ main h1 {
 }
 
 #carousel figure img {
+    position: relative;
     width: 20%;
-    height: 700px;
+    height: 100%;
     float: left;
-    opacity: .7;
+    opacity: .79;
 }
 
 @keyframes slider {
@@ -186,7 +203,90 @@ main h1 {
 }
 
 .products {
-    margin-top: 100px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.prodcuct-cards {
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.card {
+    display: inline-block;
+    margin: 30px;
+}
+
+.card:hover {
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+
+.card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#card-1-img {
+    border: 3px solid rgb(121, 75, 22);
+}
+
+#card-2-img {
+    border: 3px solid rgb(245, 144, 211);
+}
+
+#card-3-img {
+    border: 3px solid rgb(241, 174, 73);
+}
+
+#card-4-img {
+    border: 3px solid rgb(165, 49, 136);
+}
+
+#card-5-img {
+    border: 3px solid rgb(165, 128, 49);
+}
+
+#card-6-img {
+    border: 3px solid rgb(104, 75, 12);
+}
+
+.card-name {
+    display: block;
+    margin: 10px;
+    font-family: 'Satisfy';
+    font-size: 28px;
+    letter-spacing: .1em;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(151, 103, 45);
+}
+
+#card-1-name {
+    color: rgb(121, 75, 22);
+}
+
+#card-2-name {
+    color: rgb(245, 144, 211);
+}
+
+#card-3-name {
+    color: rgb(241, 174, 73);
+}
+
+#card-4-name {
+    color: rgb(165, 49, 136);
+}
+
+#card-5-name {
+    color: rgb(165, 128, 49);
+}
+
+#card-6-name {
+    color: rgb(104, 75, 12);
 }
 
 h2 {
@@ -222,6 +322,7 @@ h2 {
     height: 400px;
     width: 650px;
     margin: 60px auto;
+    border-radius: 50%;
 }
 
 article {
@@ -247,6 +348,7 @@ main p {
 }
 
 iframe {
+    position: relative;
     margin: 40px;
     width: 700px;
     height: 400px;
