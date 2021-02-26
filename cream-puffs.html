@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conti's Bakeshop and Restaurant</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-2.css">
+        <link rel="stylesheet" href="product-style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+            <input type="checkbox" name="check" id="check"/>
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+        <header>
+            <div class="banner-logo">
+                <div class="image-logo">
+                    <a href="index.html"><img src="images/contis-logo.png" alt="contis-logo"/></a>
+                </div>
+                <div class="search-container">
+                    <div class="header-buttons">
+                        <button>Order Now</button>
+                        <button>Direct Online Payment</button>
+                    </div>
+                    <input type="text" name="search" placeholder=" Search..." id="search"/>
+                </div>
+            </div>
+        </header>
+        <div class="navigation"> 
+            <nav>
+                <div class="search-bar">
+                    <input type="text" name="search" placeholder="Search..." id="search"/>
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">OUR STORES</a></li>
+                    <li id="menu-show"><a>MENU</a>
+                        <div class="menu-bar">
+                            <ul>
+                                <a href="whats-new.html"><li>What's New</li></a>
+                                <a href=""><li>Holiday Packages</li></a>
+                                <a href=""><li>Reastaurant Menu</li></a>
+                                <a href=""><li>Fabulous Cakes</li></a>
+                                <a href=""><li>Larrge Food Menu</li></a>
+                                <a href=""><li>Take Out Nook</li></a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <button class="back-button"><a href="whats-new.html">Back</a></button>
+            <div class="item-main">
+                <div class="main-left">
+                    <img src="/images/cream-puffs-item.jpg" alt="">
+                </div>
+                <div class="main-right">
+                    <div class="item-order">
+                        <h2>Cream Puffs</h2>
+                        <p>Bite into delicate, creamy goodness and experience indulgence in four flavors</p>
+                        <span>Size</span>
+                        <div class="select-box">
+                            <input type="radio" id="option-1" checked>
+                            <label for="option-1">Box of 12 - P375</label>
+                        </div>
+                        <input type="number" min="1" max="9" step="1" value="1" class="input-length" id="quantity">
+                        <div class="total-box">
+                            <label for="total">Total Price</label>
+                            <input type="text" class="input-length" name="total" id="total" readonly>
+                            <button class="add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h2>Conti's Bakeshop and Restaurant</h2>
+            <div class="footer-buttons">
+                <button>Our Services</button>
+                <button>Our Careers</button>
+                <button>Contact Us</button>
+            </div>
+            <span>Copyright <strong>Conti's Bakeshop and Restaurant</strong>. All rights reserved</span>
+        </footer>
+    </body>
+</html>

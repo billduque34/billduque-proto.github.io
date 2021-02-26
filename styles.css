@@ -9,14 +9,32 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header part */
-main, header {
-    background-color: rgba(224, 193, 145, 0.432);
+header {
+    position: relative;
+    background-color: rgb(140, 207, 131);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('./images/mendi-style-2.jpg');
+    background-repeat: repeat;
+    opacity: .07;
 }
 
 header {
     height: 130px;
     padding: 20px;
+    z-index: 1;
 }
 
 .sidebar {
@@ -69,7 +87,7 @@ header {
 }
 
 .header-buttons button:hover {
-    background-color: rgb(37, 136, 33);
+    background-color: rgb(9, 119, 14);
 }
 
 .search-container input {
@@ -82,9 +100,10 @@ header {
 .navigation {
     position: sticky;
     top: 0;
-    background-color: rgb(24, 117, 24);
+    background-color: rgb(63, 160, 63);
     padding: 1px;
     z-index: 1000;
+    box-shadow:  0 4px 2px -2px gray;
 }
 
 .search-bar {
@@ -102,7 +121,6 @@ header {
     font-size: 18px;
     font-family: Calibri;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .navigation ul {
@@ -110,13 +128,37 @@ header {
 }
 
 .navigation li {
-    margin: 10px 30px;
+    padding: 15px 80px;
     display: inline-block;
 }
 
 .navigation a:hover {
     transition: 180ms ease-in;
     color:rgb(219, 206, 179);
+}
+
+.menu-bar {
+    background-color: rgb(58, 148, 58);
+    display: none;
+    font-family: Calibri;
+}
+
+.menu-bar li {
+    margin: 0;
+    padding: 20px 40px;
+    display: block;
+}
+
+.menu-bar li:hover {
+    transition: 600ms ease-in;
+    background-color: rgb(109, 184, 109);
+}
+
+#menu-show:hover > .menu-bar {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    right: 410px;
 }
 
 h1, h2 {
@@ -128,6 +170,7 @@ h1, h2 {
 /* main part */
 main {
     padding-top: 20px;
+    background-color: rgba(224, 193, 145, 0.432);
 }
 
 main h1 {
@@ -148,11 +191,12 @@ main::before {
     content: '';
     background-image: url('images/mehndi-style.jpg');
     position: absolute;
-    opacity: 0.025;
+    opacity: 0.040;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
 } 
 
 #carousel figure {
@@ -215,12 +259,14 @@ main::before {
 .card {
     display: inline-block;
     margin: 30px;
+    transition: 100ms ease-out;
 }
 
 .card:hover {
     position: relative;
     cursor: pointer;
     transform: scale(1.1,1.1);
+    transition: 100ms ease-in;
 }
 
 
@@ -300,7 +346,7 @@ h2 {
     margin-bottom: 0;
     padding-bottom: 70px;
     background-color: rgba(255, 235, 204, 0.4);
-    height: 550px;
+    height: 100%;
 }
 
 .story-container::before {
@@ -356,7 +402,7 @@ iframe {
 /* footer part */
 
 footer {
-    background-color: rgba(191, 236, 209, 0.9);
+    background-color: rgba(139, 214, 169, 0.9);
     padding-top: 15px;
     padding-bottom: 0;
     height: 100%;
@@ -388,8 +434,18 @@ footer span, strong {
         z-index: 2;
     }
 
-    .search-container {
+    .search-container input{
         visibility: hidden;
+    }
+
+    .header-buttons button {
+        position: relative;
+        float: right;
+        clear: right;
+        display: block;
+        margin: 2px;
+        bottom: 20px;
+        background-color: rgba(15, 100, 15, 0);
     }
 
     .checkbtn {
@@ -419,7 +475,7 @@ footer span, strong {
     }
 
     .navigation li {
-        padding: 5px;
+        padding: 10px;
         margin: 0 auto;
         display: block;
     }
@@ -427,6 +483,12 @@ footer span, strong {
     .navigation li:hover {
         transition: 600ms ease-in;
         background-color: rgb(109, 184, 109);
+    }
+
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        background-color: rgb(133, 201, 124);
     }
 
     iframe {
@@ -443,5 +505,4 @@ footer span, strong {
         float: none;
         font-size: .9em;
     }
-
 }

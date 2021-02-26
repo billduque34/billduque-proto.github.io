@@ -1,0 +1,105 @@
+.item-main {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    margin: 10px auto 80px auto;
+}
+
+.main-left img {
+    width: 75%;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid rgba(158, 141, 109, 0.397);
+    box-shadow: 0 0 3px rgb(139, 118, 93);
+}
+
+
+.item-order {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 70%;
+    padding: 25px 35px;
+    margin: 0 auto;
+    background-color: rgba(201, 182, 156, 0.37);
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(139, 118, 93);
+}
+
+.item-order h2 {
+    text-shadow: none;
+}
+
+.item-order p {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.item-order span {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.select-box {
+    margin: 10px 0;
+}
+
+.select-box label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.input-length, .item-order button {
+    width: 360px;
+    height: 35px;
+}
+
+.input-length {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.total-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.total-box label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.total-box input {
+    background-color: rgb(245, 244, 244);
+    border: 1px solid gray;
+}
+
+.total-box button {
+    box-sizing: content-box;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(14, 133, 14, 0.726);
+    color: white;
+    padding: 6px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.total-box button:hover {
+    background-color: rgba(14, 133, 14, 0.863);
+}
+
+
+

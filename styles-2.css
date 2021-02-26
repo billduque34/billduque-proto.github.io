@@ -1,0 +1,53 @@
+main {
+    position: relative;
+    padding: 40px;
+    text-align: left;
+    font-family: Calibri;
+}
+
+.back-button {
+    position: relative;
+    box-sizing: content-box;
+    padding: 10px 30px;
+    background-color: rgb(209, 150, 77);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+.item {
+    position: relative;
+    margin: 15px 10px 20px 10px;
+    display:inline-block;
+    background-color: rgb(253, 248, 230);
+    padding-bottom: 20px;
+    color: rgb(119, 98, 59);
+    box-shadow: 0 0 10px rgb(209, 183, 146);
+    transition: 100ms ease-out;
+}
+
+.item:hover {
+    position: relative;
+    cursor: pointer;
+    transition: 100ms ease-in;
+    transform: scale(1.02,1.02);
+}
+
+.item-img {
+    height: 20rem;
+    width: 20rem;
+}
+
+b, main span {
+    margin: 10px;
+    display: block;
+}
+
+p {
+    margin-left: 10px;
+}
